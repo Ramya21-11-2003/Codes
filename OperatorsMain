@@ -1,0 +1,33 @@
+package print;
+import java.util.*;
+public class OperatorsMain {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter number1:");
+		int num1 = scan.nextInt();
+		System.out.println("enter number2:");
+		int num2 = scan.nextInt();
+		System.out.println("enter operator:");
+		char operator = scan.next().charAt(0);
+		switch(operator)
+		{
+		case '+':
+			System.out.println(num1+num2);
+			break;
+		case '-':
+			System.out.println(num1-num2);
+			break;
+		case '*':
+			System.out.println(num1*num2);
+			break;
+		case '/':
+			System.out.println(num1/num2);
+			break;
+		case '%':
+			System.out.println(num1%num2);
+			break;
+		default:
+			System.out.println("invalid operator");
+		}
+	}
+}
